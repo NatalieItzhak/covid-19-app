@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul {
+	list-style: none;
+}
+#main-app {
+	text-align: center;
+}
+body{
+    background: url(./corona-virus-2019-1.jpg) center/cover;
+}
+
+.chart-container {
+	position: relative;
+	margin: auto;
+	width: 70vw;
+	display: block;
+}
+
+button {
+	min-width: 10vw;
+	font-size: 1rem;
+	padding: 3px;
+	color: #fff;
+	margin: 0 10px;
+	outline: none;
+	background: black;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+button:hover {
+	background: #fff;
+	color: #000;
+	border: 1px solid #000;
+	transition: all 0.2s;
+}
+.cases,
+.continents {
+	padding: 10px;
+}
+.cases {
+	visibility: hidden;
+}
+.countries-container {
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	padding-top: 10px;
+	line-height: 1.3rem;
+	flex-wrap: wrap;
+}
+
+ul {
+	padding: 5px;
+	width: 150px;
+}
+li {
+	list-style: none;
+	cursor: pointer;
+}
+li:hover {
+	text-decoration: underline;
+	color: #e72a11;
+	transition: all 0.2s;
+}
+
+.country-details-container {
+	text-align: center;
+	display: none;
+	position: relative;
+}
+.country-details {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 10px;
+}
+.country-details > div {
+	border: 1px solid black;
+	padding: 15px;
+	text-align: center;
+}
+h1 {
+	padding: 10px;
+}
+.back-btn {
+	display: flex;
+	justify-content: space-evenly;
+	min-width: 90px;
+	position: absolute;
+	top: 60px;
+}
+.fas {
+	font-size: 10px;
+	margin-top: 5px;
+}
+.landscape {
+	position: absolute;
+	display: none;
+	width: 25px;
+	top: 0;
+	right: 0;
+  
+}

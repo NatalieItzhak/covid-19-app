@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+    <title>Covid-19 App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+</head>
+<body>
+    <div class="landscape"></div> 
+		<div id="main-app">
+			<div class="header">
+				<h1>Covid 19 Statistics</h1>
+			</div>
+			<div class="country-details-container">
+				<button class="back-btn">
+					<i class="fas fa-chevron-left"></i><span>Back</span>
+				</button>
+				<h1 class="header"></h1>
+				<div class="country-details">
+					<div class="total-cases">
+						Total Cases
+						<h2></h2>
+					</div>
+					<div class="total-deaths">
+						Total Deaths
+						<h2></h2>
+					</div>
+					<div class="total-recovered">
+						Total Recovered
+						<h2></h2>
+					</div>
+					<div class="new-cases">
+						New Cases
+						<h2></h2>
+					</div>
+					<div class="new-deaths">
+						New Deaths
+						<h2></h2>
+					</div>
+					<div class="critical">
+						Critical
+						<h2></h2>
+					</div>
+				</div>
+			</div>
+			<div class="chart-container">
+				<canvas id="chart"></canvas>
+			</div>
+			<div class="cases">
+				<button class="confirmed">Confirmed</button>
+				<button class="deaths">Deaths</button>
+				<button class="recovered">Recovered</button>
+				<button class="critical">Critical</button>
+			</div>
+			<div class="continents">
+				<button class="asia">Asia</button>
+				<button class="americas">Americas</button>
+				<button class="africa">Africa</button>
+				<button class="europe">Europe</button>
+				<button class="world">World</button>
+			</div>
+			<div class="countries-container"></div>
+		</div>
+        
+    <script src='./JS/covid.js'> </script>
+</body>
+</html>
